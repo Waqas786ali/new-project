@@ -1,0 +1,55 @@
+.team-members{
+    padding: 10rem 2rem;
+    background: #f5f3f5;
+    color: #191919;
+    grid-column: 1 / -1;
+
+}
+
+.member{
+    text-align: center;
+    margin: 4rem 0;
+
+    img{
+        border-radius: 3rem;
+    }
+
+    h3{
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+
+    h6{
+        margin: 0 0 7px 0;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #a72121;
+    }
+
+    .member-icons{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 3rem;
+
+        a{
+            i{
+                font-size: 3rem;
+            }
+        }
+
+        .fa-facebook{
+            color: #3b5998;
+        }
+        .fa-twitter{
+            color: #00aced;
+        }
+        .fa-instagram{
+            color: #fb3958;
+        }
+        .fa-google{
+            color: #f4c20e;
+        }
+    }
+}

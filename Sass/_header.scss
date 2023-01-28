@@ -1,0 +1,52 @@
+.header{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background-image: linear-gradient(to right bottom,rgba(211, 165, 80, 0.3),rgba(0,0,0,0.7)), url(../Images/hero-bg.jpg);
+    background-attachment: fixed;
+    @include bg;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    
+    &__content{
+        grid-column: 3 / 9;
+        grid-row: 5 / 9;
+        background-color: rgba(0,0,0, 0.6);
+        display: inline-block;
+        text-align: center;
+        padding: 5rem 5rem;
+        outline: 2px solid var(--color-quinary);
+        outline-offset: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (max-width: 550px){
+            grid-column: 2 / 10;
+        }
+
+        @media screen and (max-width: 421px){
+            grid-row: 5 / 8;
+        }
+
+
+        &--heading-secondary{
+            font-size: calc(3rem + 2vw);
+            color: var(--color-quinary-mm);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            span{
+                color: var(--color-quinary-tsi);
+            }
+        }
+
+        &--heading-primary{
+            font-size: calc(2rem + 1vw);
+            letter-spacing: 3px;
+            color: white;
+            opacity: 0.7;
+        }
+        
+    }
+}

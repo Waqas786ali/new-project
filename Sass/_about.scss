@@ -1,0 +1,63 @@
+.section-about{
+    grid-column: 1 / -1;
+    background-image: linear-gradient(to right bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url(../Images/corentin-le-leannec-Cj1HvuGxcu0-unsplash.jpg);
+    @include bg;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+    &__content{
+        padding: 20rem 5rem 20rem 20rem;
+        background-color: var(--color-quinary-iopacity);
+        grid-column: 4 / 9;
+        grid-row: 1 / -1;
+        clip-path: polygon(50% 0,100% 0, 100% 100%, 0 100%);
+        // border-top: 1px solid var(--color-quinary-mm);
+        // opacity: 0.7;
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / -1;
+            grid-row: 5 / 9;
+            clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+            padding: 15rem 0;
+        }
+        .content-1{
+            margin-left: 20rem;
+            @media screen and (max-width: 1024px) {
+                margin-left: 5rem;
+            }
+            @media screen and (max-width: 376px) {
+                margin-right: 3rem;
+            }
+        }
+        h2{
+            text-transform: uppercase;
+            color: var(--color-secondary);
+            opacity: 1;
+            z-index: 1;
+            filter: brightness(2);
+            font-size: calc(3rem + 1vw);
+            span{
+                color: var(--color-quinary-mm);
+            }
+        }
+        p{
+            font-size: calc(.5rem + 1vw);
+            line-height: 1.5;
+            letter-spacing: 1px;
+            color: var(--color-secondary) !important;
+            opacity: 0.8;
+            margin: 2rem 0 3rem 0;
+        }
+        a{
+            padding: 1.2rem 2.2rem;
+            color: var(--color-secondary);
+            border: 1px solid var(--color-secondary);
+            &:hover{
+                background-color: var(--color-quinary-mm);
+                transition: all .5s ease-in-out;
+            }
+
+        }
+    }
+}

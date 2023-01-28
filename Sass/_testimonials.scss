@@ -1,0 +1,62 @@
+.testimonials{
+    padding: 5rem 2rem;
+    color: #191919;
+    grid-column: 1 / -1;
+    background-image: linear-gradient(to right bottom,rgba(211, 165, 80, 0.3),rgba(0,0,0,0.7)), url(../Images/alex-wong-l5Tzv1alcps-unsplash.jpg);
+    background-attachment: fixed;
+    @include bg;
+
+}
+
+.card{
+    text-align: center;
+    margin: 4rem 2rem;
+    background-color: rgba(0,0,0,.6);
+    outline: 1px solid white;
+    outline-offset: -10px;
+    border-radius: 2.5rem;
+    padding: 7rem 0;
+    &:hover{
+        transform: scale(1.1);
+        transition: all .5s ease-in-out;
+        &:not(:hover){
+            transform: scale(.9);
+        }
+    }
+
+
+
+    i{
+        font-size: 5rem;
+        margin: 2rem 0;
+        color: cyan;
+    }
+
+    p{
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+        color: white;
+        opacity: 0.8;
+    }
+
+    h6{
+       margin: 2rem 0;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .card-img{
+      width: 100%;
+    //   position: relative;
+      img{
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          position: relative;
+          left: 40%;
+          border: 2px solid cyan;
+      }
+    }
+}
